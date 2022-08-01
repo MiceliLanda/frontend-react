@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=League+Gothic&family=Luxurious+Roman&family=Playfair+Display:ital,wght@0,400;1,600&family=The+Nautigal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+SC:wght@300&family=League+Gothic&family=Luxurious+Roman&family=Playfair+Display:wght@700&family=The+Nautigal&display=swap');
+/*** ESTILOS BOTÓN GROW ELLIPSE ***/
+.ov-btn-grow-ellipse {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 2px solid #5b99ea; /* tamaño y color de borde */
+    padding: 4px 9px;
+    border-radius: 30px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+.ov-btn-grow-ellipse:hover {
+    color: #fff;/* color de fuente hover */
+}
+.ov-btn-grow-ellipse::after {
+    content: "";
+    background: #5b99ea; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    transition: all 0.4s ease;
+}
+.ov-btn-grow-ellipse:hover::after {
+    transition: all 0.6s ease-out;
+    transform: scale(1, 1);
+}
+
+p{
+
+    /*font-family: 'Abril Fatface', cursive;*/
+    font-family: 'Cormorant SC', serif;
+    font-family: 'League Gothic', sans-serif;
+    /*font-family: 'Luxurious Roman', cursive;*/
+    font-family: 'Playfair Display', serif;
+    /*font-family: 'The Nautigal', cursive;*/
+}
+h1{
+    background: #fd1c1c;
+    font-size: 15px;
+}
+
+/*** ESTILOS BOTÓN SLIDE BOTTOM ***/
+.ov-btn-slide-bottom {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    }
+    .ov-btn-slide-bottom:hover {
+    color: #fff; /* color de fuente hover */
+    }
+    .ov-btn-slide-bottom::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    }
+    .ov-btn-slide-bottom:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    }
+    /*** ESTILOS BOTÓN GROW SKEW ***/
+.ov-btn-grow-skew {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 10px 11px;
+    border-radius: 2px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    }
+    .ov-btn-grow-skew:hover {
+    color: #fff;/* color de fuente hover */
+    }
+    .ov-btn-grow-skew::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+    }
+    .ov-btn-grow-skew:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+    }
